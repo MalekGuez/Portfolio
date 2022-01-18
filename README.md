@@ -1,7 +1,5 @@
-<img src="./public/images/Logo.png"/>
-<h3 style="font-size: 32px" align="center">
-  My Portfolio Website
-</h3>
+<img src="./public/images/MyPortfolio.png" align="center"/>
+
 
 <div align="center">
 
@@ -13,7 +11,7 @@ Welcome to my Portfolio Website built with ReactJS and hosted on [Netlify](https
 
 # Run locally
 
-> **NOTE:** You must have Node.js and Git installed on your machine in order to run it locally.
+> **📝** You must have Node.js and Git installed on your machine in order to run it locally.
 
 - Step 1: Clone the project
 
