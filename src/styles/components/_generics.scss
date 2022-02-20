@@ -1,0 +1,42 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    height: 50px;
+
+    padding: 0 35px;
+
+    background: $color-blured-purple;
+    backdrop-filter: blur(50px);
+
+    font-weight: 400;
+
+    border: 1px solid rgba(255, 255, 255, 28%);
+    border-radius: 50px;
+
+    cursor: pointer;   
+}
+
+.bold {
+    font-weight: bold;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.section__container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+
+    &::-webkit-scrollbar {
+        display: none; // Safari and Chrome
+    }
+}

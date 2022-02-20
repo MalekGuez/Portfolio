@@ -1,0 +1,98 @@
+.home__container {
+    width: 100%;
+    height: 100%;
+
+    background: transparent;
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .home__content {
+        width: 70%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: uppercase;
+
+        .home---name {
+            font-size: 93px;
+            line-height: 100px;
+            text-indent: -4px;
+        }
+
+        .home---text {
+            font-size: 55px;
+        }
+
+        .content__item {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            .item__3D-container {
+                position: relative; 
+                margin-left: 20px;
+                perspective: 1000;
+                transform-style: preserve-3d;                
+                animation: rotate 8s ease-in infinite;
+              
+                @keyframes rotate {
+                    0% {
+                        transform: rotateX(0deg);
+                    }
+                    25% {
+                        transform: rotateX(90deg);
+                    }
+                    50% {
+                        transform: rotateX(180deg);
+                    }
+                    75% {
+                        transform: rotateX(270deg);
+                    }
+                    100% {
+                        transform: rotateX(360deg);
+                    }
+                }
+              
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    height: 50px;
+                    width: 295px;
+                    padding: 10px 30px;
+                    margin: -35px 0;
+                    text-align: center;
+                    font-size: 50px;
+                    cursor: default;
+                    &:nth-child(1) {
+                        transform: rotateX(360deg) translateZ(35px);
+                        background: #6B2CFA;
+                    }
+                    
+                    &:nth-child(2) {
+                        transform: rotateX(270deg) translateZ(35px);
+                        background: #3a6efc;
+                    }
+                    
+                    &:nth-child(3) {
+                        transform: rotateX(180deg) translateZ(35px);
+                        background: #1b97fe;
+                    }
+                    
+                    &:nth-child(4) {
+                        transform: rotateX(90deg) translateZ(35px);
+                        background: #04b5ff;
+                    }                
+                }              
+            } 
+        }
+              
+    }
+    
+}
