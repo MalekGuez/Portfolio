@@ -8,15 +8,17 @@ const Portfolio = () => {
 
     const home = useRef(null);
 
+
     const onScroll = () => {
-        window.removeEventListener('scroll', onScroll);
-        let x = document.scrollTop;
-        x = 6-x/50;
+        window.removeEventListener("scroll", onScroll);
+        let x = document.documentElement.scrollTop;
+        x = 5-x/100;
         if(x<0) x=0;
-        console.log(x);
-        // home.current.style.backdrop-filter = "blur("+x+"px)";
-        window.addEventListener('scroll', onScroll);
+        home.current.style.backdropFilter = "blur("+x+"px)";
+        window.addEventListener("scroll", onScroll);
+        window.removeEventListener("scroll", onScroll);
     }
+
     return (
         <>
             <Navbar />
