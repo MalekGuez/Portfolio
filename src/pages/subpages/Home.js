@@ -4,6 +4,7 @@ import Button from '../../components/generics/Button';
 const Home = ({home}) => {
     return (
         <div className="home__container" ref={home}>
+            <div className="home__background---blured"></div>
             <div className="home__content">
                 <p className="bold home---text">Hi my name is</p>
                 <p className="bold home---name">Malek.</p>
@@ -12,7 +13,7 @@ const Home = ({home}) => {
                     <div className="item__3D-container">
                         <div className="bold">Developer</div>
                         <div className="bold">Designer</div>
-                        <div className="bold">TECH FAN</div>
+                        <div className="bold">Tech fan</div>
                         <div className="bold">Freelancer</div>
                     </div>
                 </div>
