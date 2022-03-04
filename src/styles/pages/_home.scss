@@ -17,17 +17,17 @@
         text-transform: uppercase;
 
 
-        .home---name {
+        .home__name {
             font-size: 93px;
             line-height: 100px;
             text-indent: -4px;
         }
 
-        .home---text {
-            font-size: 55px;
-        }
+        .home__text { font-size: 55px }
 
-        .content__item {
+        .home__button { margin-top: 5% }
+        
+        .home__items {
             display: flex;
             align-items: center;
 
@@ -41,21 +41,11 @@
                 animation: rotate 8s ease-in infinite;
               
                 @keyframes rotate {
-                    0% {
-                        transform: rotateX(0deg);
-                    }
-                    25% {
-                        transform: rotateX(90deg);
-                    }
-                    50% {
-                        transform: rotateX(180deg);
-                    }
-                    75% {
-                        transform: rotateX(270deg);
-                    }
-                    100% {
-                        transform: rotateX(360deg);
-                    }
+                    0% { transform: rotateX(0deg) }
+                    25% { transform: rotateX(90deg) }
+                    50% { transform: rotateX(180deg) }
+                    75% { transform: rotateX(270deg) }
+                    100% { transform: rotateX(360deg) }
                 }
               
                 div {

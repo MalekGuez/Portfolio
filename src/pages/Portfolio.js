@@ -1,18 +1,16 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useRef } from "react";
 
 import Home from "./subpages/Home";
-import Content from "./subpages/Content";
+import Contents from "./subpages/Contents";
 import Navbar from "../components/navigation/Navbar";
 
 const Portfolio = () => {
 
     const home = useRef(null);
-    const content = useRef(null);
+    const contents = useRef(null);
     const bg = useRef(null);
 
-    const onScroll = (e) => {
-        bg.current.style.opacity = e.target.scrollTop*1.2 / e.target.clientHeight
-    }
+    const onScroll = (e) => { bg.current.style.opacity = e.target.scrollTop / e.target.clientHeight }
 
     return (
         <>
@@ -25,7 +23,7 @@ const Portfolio = () => {
                 </section>
 
                 <section className="section">
-                    <Content contentRef={content}/>
+                    <Contents contentsRef={contents}/>
                 </section>
             </div>
         </>
