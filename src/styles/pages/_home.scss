@@ -1,22 +1,21 @@
 .home__container {
-    width: 100%;
-    height: 100%;
-
-    background: transparent;
-    backdrop-filter: blur(10px);
-
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .home__content {
-        width: 70%;
-        height: 100%;
+    width: 100%;
+    height: 100%;
 
+    .home__content {        
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        width: 70%;
+        height: 100%;
+
         text-transform: uppercase;
+
 
         .home---name {
             font-size: 93px;
@@ -31,12 +30,13 @@
         .content__item {
             display: flex;
             align-items: center;
+
             margin-top: 20px;
 
             .item__3D-container {
                 position: relative; 
                 margin-left: 20px;
-                perspective: 1000;
+                perspective: 100000px;
                 transform-style: preserve-3d;                
                 animation: rotate 8s ease-in infinite;
               
@@ -63,13 +63,16 @@
                     justify-content: center;
                     align-items: center;
                     position: absolute;
+
                     height: 50px;
                     width: 295px;
+                    
                     padding: 10px 30px;
                     margin: -35px 0;
                     text-align: center;
                     font-size: 50px;
                     cursor: default;
+                    
                     &:nth-child(1) {
                         transform: rotateX(360deg) translateZ(35px);
                         background: #6B2CFA;

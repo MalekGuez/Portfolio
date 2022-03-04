@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from '../../components/generics/Button';
 
-const Home = ({home}) => {
+const Home = ({homeRef}) => {
     return (
-        <div className="home__container" ref={home}>
+        <div className="home__container" ref={homeRef}>
             <div className="home__background---blured"></div>
             <div className="home__content">
                 <p className="bold home---text">Hi my name is</p>

@@ -1,9 +1,10 @@
 import React from "react";
 
-const Content = ({content}) => {
+const Content = ({contentRef, bgRef}) => {
     return (
-        <div className="content__container" ref={content}>
+        <div className="content__container" ref={contentRef}>
             blabla
+            <div className="content__background" ref={bgRef}></div>
         </div>
     );
 }
