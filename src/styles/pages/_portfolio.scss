@@ -1,5 +1,21 @@
 .section__container {
 
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+
+    section {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
+    &::-webkit-scrollbar {
+        display: none; // Safari and Chrome
+    }
+
     .background---blur {
         position: fixed;
 

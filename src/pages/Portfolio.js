@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
-import Home from "./subpages/Home";
-import Contents from "./subpages/Contents";
+import Home from "./Home";
+import Contents from "./Contents";
 import Navbar from "../components/navigation/Navbar";
 
 const Portfolio = () => {
