@@ -1,9 +1,8 @@
 import React from 'react';
-import Button from '../components/generics/Button';
 
-const Home = ({homeRef}) => {
+const Home = () => {
     return (
-        <div className="home__container" ref={homeRef}>
+        <div className="home__container" id="home">
             <div className="home__background---blured"></div>
 
             <div className="home__content">
@@ -17,11 +16,11 @@ const Home = ({homeRef}) => {
                         <div className="bold">Developer</div>
                         <div className="bold">Designer</div>
                         <div className="bold">Tech fan</div>
-                        <div className="bold">Freelancer</div>
+                        <div className="bold">Student</div>
                     </div>
                 </div>
                 <div className="home__button">
-                    <Button text="About me" onClick={() => console.log("e")}/>
+                    <a className="button" href="#about">More about me..</a>
                 </div>
             </div>
         </div>

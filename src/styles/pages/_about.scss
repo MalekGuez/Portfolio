@@ -1,0 +1,101 @@
+.about__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    transition: all .5s ease;
+    
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 60%;
+        height: 45%;
+
+        padding: 25px 50px;
+
+        border-radius: 25px;
+        border: solid 1px rgba(255, 255, 255, 0.4);
+
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);        
+
+        transition: all .5s ease;
+
+        .about__texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 100%;
+            height: 60%;
+
+            margin-top: 5%;
+            margin-left: 15px;
+            transition: all .5s ease;
+
+            a { margin-top: 5% }
+    
+        }
+    }
+
+    // RESPONSIVE ------------------------------------------------
+
+    @media (max-width: 1000px) {
+        .about__content {
+            .title---circles { font-size: 30px }
+
+            .about__texts {
+                margin-top: 12%;
+                font-size: 14px;
+
+                a { margin-top: 10% }
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        margin: 0 5% 0 5%;
+        
+        .about__content {
+            width: 100%;
+            height: 50%;
+            .title---circles { font-size: 26px }
+
+            .about__texts {
+                margin-top: 10%;
+                font-size: 13px;
+
+
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .about__content {
+            .title---circles { font-size: 24px }
+
+            .about__texts {
+                margin-top: 15%;
+                margin-left: 0;
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .about__content {
+            .title---circles { font-size: 22px }
+
+            .about__texts {
+                margin-top: 20%;
+                margin-left: 0;
+                font-size: 11px;
+            }
+        }
+    }
+}

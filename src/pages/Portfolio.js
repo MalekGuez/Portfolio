@@ -1,16 +1,17 @@
 import React, { useRef } from "react";
 
 import Home from "./Home";
-import Contents from "./Contents";
 import Navbar from "../components/navigation/Navbar";
+import About from "./About";
+import Skills from "./Skills";
+import Works from "./Works";
+import Contact from "./Contact";
 
 const Portfolio = () => {
 
-    const home = useRef(null);
-    const contents = useRef(null);
     const bg = useRef(null);
 
-    const onScroll = (e) => { bg.current.style.opacity = e.target.scrollTop / e.target.clientHeight }
+    const onScroll = (e) => bg.current.style.opacity = e.target.scrollTop / e.target.clientHeight;
 
     return (
         <>
@@ -19,12 +20,25 @@ const Portfolio = () => {
                 <div className="background---blur"></div>
                 <div className="background---clear" ref={bg}></div>
                 <section className="section">
-                    <Home homeRef={home}/>
+                    <Home/>
                 </section>
 
                 <section className="section">
-                    <Contents contentsRef={contents}/>
+                    <About/>
                 </section>
+
+                <section className="section">
+                    <Skills />
+                </section>
+
+                <section className="section">
+                    <Works />
+                </section>
+
+                <section className="section">
+                    <Contact />
+                </section>
+
             </div>
         </>
     )

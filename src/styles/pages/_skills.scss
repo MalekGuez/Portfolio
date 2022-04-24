@@ -1,0 +1,108 @@
+.skills__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    .skills__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 60%;
+        height: 50%;
+
+        padding: 25px 50px;
+
+        border-radius: 25px;
+        border: solid 1px rgba(255, 255, 255, 0.4);
+
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);        
+
+        transition: all .5s ease;
+
+        .skills__texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 100%;
+            height: 70%;
+
+            margin-top: 25px;
+            margin-left: 15px;
+            transition: all .5s ease;
+
+            .tag-cloud {
+                margin-top: 20px;
+                .tag { 
+                    cursor: default;
+                    transition: all .5s ease; 
+                }
+
+                .tag:hover { 
+                    color: white !important;
+                    border-color: white !important;
+                }    
+            }
+    
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .skills__content {
+            width: 80%;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .skills__content {
+            height: 55%;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .skills__content {
+            width: 70%;
+            height: 65%;
+            font-size: 13px;
+
+
+            .skills__texts {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        .skills__content {
+            width: 70%;
+            height: 550px;
+            font-size: 13px;
+
+
+            .skills__texts {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .skills__content {
+            justify-content: flex-start;
+            font-size: 11px;
+
+            .title---circles {
+                font-size: 26px;
+                margin-top: 15px;
+            }
+            .skills__texts {
+                margin-top: 40px;
+            }
+        }
+    }
+}

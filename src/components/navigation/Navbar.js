@@ -6,10 +6,10 @@ const Navbar = () => {
         <nav className="nav__container">
             <div className="nav__logo">&lt;/&gt;</div>
             <div className="nav__items">
-                <div className="nav__item">Home</div>
-                <div className="nav__item">About</div>
-                <div className="nav__item">Portfolio</div>
-                <Button text={"Contact me"} onClick={() => console.log("")} />
+                <a className="nav__item" href="#home">Home</a>
+                <a className="nav__item" href="#about">About</a>
+                <a className="nav__item" href="#works">Portfolio</a>
+                <a className="button" href="#contact">Contact me</a>
             </div>
         </nav>
     );
