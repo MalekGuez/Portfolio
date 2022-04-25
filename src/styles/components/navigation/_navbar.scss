@@ -6,7 +6,7 @@
     z-index: 999;
     width: 100%;
     height: 10%;
-
+    
     .nav__logo {
         font-size: 36px;
         font-weight: 700;
@@ -24,13 +24,23 @@
         margin-right: 140px;
 
         width: 480px;
-        height: 100%;        
+        height: 100%;
         
         .nav__item {
             font-size: 16px;
             font-weight: 400;
 
             cursor: pointer;        
-        }       
+        }
+    }
+
+    @media (max-width: 850px) {
+        .nav__logo {
+            margin-left: 15%;
+        }
+
+        .nav__items {
+            display: none;
+        }
     }
 }

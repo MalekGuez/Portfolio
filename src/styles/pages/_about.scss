@@ -14,7 +14,7 @@
         justify-content: center;
 
         width: 60%;
-        height: 45%;
+        height: 55%;
 
         padding: 25px 50px;
 
@@ -25,14 +25,13 @@
         backdrop-filter: blur(15px);        
 
         transition: all .5s ease;
-
+        .title---circles { margin-bottom: 10px }
         .about__texts {
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             width: 100%;
-            height: 60%;
 
             margin-top: 5%;
             margin-left: 15px;

@@ -16,13 +16,19 @@
 
         text-transform: uppercase;
 
+        transition: all .5s ease;
+
         .home__name {
             font-size: 93px;
             line-height: 100px;
             text-indent: -4px;
+            transition: all .5s ease;
         }
 
-        .home__text { font-size: 55px }
+        .home__text {
+            font-size: 55px;
+            transition: all .5s ease; 
+        }
 
         .home__button { margin-top: 5% }
         
@@ -38,7 +44,7 @@
                 perspective: 100000px;
                 transform-style: preserve-3d;                
                 animation: rotate 8s ease-in infinite;
-              
+
                 @keyframes rotate {
                     0% { transform: rotateX(0deg) }
                     25% { transform: rotateX(90deg) }
@@ -61,6 +67,8 @@
                     text-align: center;
                     font-size: 50px;
                     cursor: default;
+
+                    transition: all .5s ease;
                     
                     &:nth-child(1) {
                         transform: rotateX(360deg) translateZ(35px);
