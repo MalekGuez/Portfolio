@@ -19,12 +19,15 @@
         padding: 25px 50px;
 
         border-radius: 25px;
+        
         border: solid 1px rgba(255, 255, 255, 0.4);
 
         background: rgba(255, 255, 255, 0.1);
+
         backdrop-filter: blur(15px);        
 
         transition: all .5s ease;
+
         .title---circles { margin-bottom: 10px }
         .about__texts {
             display: flex;

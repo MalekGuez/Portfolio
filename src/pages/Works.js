@@ -1,25 +1,54 @@
 import React from 'react';
 
 import * as p from '../assets/content/worksIndex';
-import WorkSlider from '../components/generics/WorkSlider';
+import WorksSlider from '../components/generics/WorksSlider';
 
 const Works = () => {
     
-    const devProjects = [{
-        Charlemagne: {
+    const devProjects = [
+        {
             name: "Charlemagne",
-            logo: p.Charlemagne,
+            image: p.Charlemagne,
             link: "https://github.com/Nahay/Charlemagne"
         },
-
-        WeebLampe: {
+        {
             name: "Weeb Lampe",
-            logo: p.WL,
+            image: p.WL,
             link: "https://github.com/Nahay/WeebLampe"            
         },
-
-
-    }];
+        {
+            name: "Weeb Battle",
+            image: p.WB
+        },
+        {
+            name: "Charlemagne",
+            image: p.Charlemagne,
+            link: "https://github.com/Nahay/Charlemagne"
+        },
+        {
+            name: "Weeb Lampe",
+            image: p.WL,
+            link: "https://github.com/Nahay/WeebLampe"            
+        },
+        {
+            name: "Weeb Battle",
+            image: p.WB
+        },
+        {
+            name: "Charlemagne",
+            image: p.Charlemagne,
+            link: "https://github.com/Nahay/Charlemagne"
+        },
+        {
+            name: "Weeb Lampe",
+            image: p.WL,
+            link: "https://github.com/Nahay/WeebLampe"            
+        },
+        {
+            name: "Weeb Battle",
+            image: p.WB
+        }
+    ];
 
     const designProjects = [{
         PulpFiction: {
@@ -34,8 +63,11 @@ const Works = () => {
         <div className="works__container" id="works">
             <div className="works__content">
                 <h1 className="title---circles">WORKS</h1>
-                
-                <WorkSlider list={devProjects}/>
+
+                <div className="works__slider">
+                    <WorksSlider list={devProjects}/>
+                </div>
+            
             </div>
        
         </div>
