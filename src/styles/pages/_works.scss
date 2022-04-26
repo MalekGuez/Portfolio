@@ -15,42 +15,129 @@
 
         .works__slider {
             display: flex;
-
+            flex-direction: row;
             width: 100%;
             height: 100%;
 
-            .slider__container {
+            .slider__buttons {
                 display: flex;
-                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
 
-                width: 500px;
+                width: 10%;
                 height: 100%;
 
-                overflow-x: scroll;
+                margin-right: 5%;
 
-                .slider__box {
+                position: relative;
+
+                .focused { 
+                    .button---icons { 
+                        transform: scale(1.5);
+                        path { color: $color-blue }
+                     } 
+                }
+
+                .slider__button {
                     display: flex;
-                    flex-direction: column;
+                    justify-content: center;
                     align-items: center;
 
-                    width: 200px;
-                    height: 80%;
+                    width: 75px;
+                    height: 75px;
 
+                    margin-top: 10%;
                     border-radius: 25px;
                     border: solid 1px rgba(255, 255, 255, 0.4);
             
                     background: rgba(255, 255, 255, 0.1);
                     backdrop-filter: blur(15px);
 
-                    margin-left: 10px;
+                    &:hover {
+                        cursor: pointer;
 
-                    &:nth-child(1) {
-                        margin-left: 0;
+                        span {
+                            visibility: visible;
+                            opacity: 1;        
+                        }
                     }
 
-                    .slider__title { font-size: 14px }
-                }
+                    .button---icons { transition: all .4s ease }
+
+                    span {
+                        position: absolute;
+                        left: calc(100% + 7px);
+    
+                        visibility: hidden;
+                        opacity: 0;
+                        cursor: default;
+
+                        transition: all .5s ease;
+
+                        font-size: 12px;
+                        padding: 10px;
+                        
+                        border-radius: 10px;
+                        background: rgba(255, 255, 255, 0.1);
+                    }
+                }              
             }
+
+            .slider {
+                width: 80%;
+                height: 100%;
+
+                cursor: grab;
+                overflow: hidden;
+
+                background: teal;
+
+                .slider__inner {
+                    display: flex;
+                    align-items: center;
+                    
+                    height: 100%;
+
+                    background: salmon;
+
+                    .slider__box {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+    
+                        min-width: 250px;
+                        height: 80%;
+    
+                        border-radius: 25px;
+                        border: solid 1px rgba(255, 255, 255, 0.4);
+                
+                        background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(15px);
+    
+                        margin-left: 20px;
+                        pointer-events: none;
+                        animation: appear 1s ease;
+    
+                        @keyframes appear {
+                            from {
+                                opacity: 0; 
+                                transform: translate3d(1000px, 0, 0);
+                            }
+                            to { 
+                                opacity: 1;
+                                transform: translate3d(0, 0, 0)
+                            }
+                        }
+                        &:nth-child(1) {
+                            margin-left: 0;
+                        }
+    
+                        .slider__title { font-size: 14px }
+                    }
+                }
+            }            
         }
     }
 
