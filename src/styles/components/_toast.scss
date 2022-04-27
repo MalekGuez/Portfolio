@@ -1,0 +1,12 @@
+/* Class for the displayed toast */
+.Toastify__toast {
+    border-radius: 25px;
+    border: solid 1px rgba(255, 255, 255, 0.4);
+
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(15px);
+}
+
+.Toastify__toast-body { font-size: 14px }
+
+.Toastify__progress-bar--success { background: green }
