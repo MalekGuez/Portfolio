@@ -9,13 +9,15 @@
     .works__content {
         display: flex;
         flex-direction: column;
-        
-        width: 80%;
+
+        width: 85%;
         height: 100%;
 
         .works__slider {
             display: flex;
             flex-direction: row;
+            justify-content: center;
+
             width: 100%;
             height: 100%;
 
@@ -86,6 +88,7 @@
             }
 
             .slider {
+                display: flex; 
                 width: 80%;
                 height: 100%;
 
@@ -95,7 +98,7 @@
                     width: 100%;
                     height: 100%;
 
-                    overflow-x: scroll;
+                    overflow-x: hidden;
 
                     .slider__box {
                         display: flex;
@@ -103,7 +106,7 @@
                         justify-content: center;
                         align-items: center;
                         
-                        min-width: 250px;
+                        min-width: 300px;
                         height: 80%;                        
 
                         position: relative;
@@ -119,24 +122,59 @@
                         user-select: none;
 
                         animation: appear 1s ease;
-    
+
                         @keyframes appear {
                             from {
+                                visibility: hidden;
                                 opacity: 0; 
-                                transform: translate3d(1000px, 0, 0);
+                                transform: translate3d(200px, 0, 0);
                             }
                             to { 
+                                visibility: visible;
                                 opacity: 1;
                                 transform: translate3d(0, 0, 0)
                             }
                         }
+
                         &:nth-child(1) {
                             margin-left: 0;
                         }
+
+                        .box__content {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            height: 45%;
+
+                            .slider__title { 
+                                font-size: 22px;
+                            }
+
+                            .slider__image { 
+                                width: 150px;
+                                height: 150px;
+                               
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                img { 
+                                    width: 185px;
+                                    border-radius: 20px;
+                                    pointer-events: none;
+                                }    
+                            }
+                        }
     
-                        .slider__title { font-size: 14px }
+                        
 
                         .slider__infos {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
                             position: absolute;
                             bottom: 0;
 
@@ -146,16 +184,86 @@
                             border-bottom-left-radius: 25px;
                             border-bottom-right-radius: 25px;
 
-                            background:rgba(255, 255, 255, 0.4);
+                            background:rgba(0, 0, 0, 0.5);
 
                             transition: all .5s ease;
                             transform: translate3d(0, 200px, 0);
+
+                            .infos__content {  
+                                display: flex;
+                                justify-content: space-between;
+
+                                .info__item {
+                                    margin-left: 20px;
+                                    
+                                    &:first-child {
+                                        margin: 0;
+                                    }
+
+                                    &:hover {
+                                        img {
+                                            transform: scale(1.3);
+                                        }
+                                    }
+
+                                    img {
+                                        pointer-events: none;
+                                        transition: all .5s ease;
+                                        width: 35px;
+                                    }
+                                }
+
+                                
+                                .small {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    img { width: 25px }                                        
+                                }
+                              
+                            }
                         }
 
-                        &:hover > .slider__infos {
-                            transform: translate3d(0, 0, 0);
+                        &:hover {
+                            .slider__infos { transform: translate3d(0, 0, 0) }
                         }
                     }
+                }
+
+                .slider__arrows {
+                    display: flex;
+                    align-items: center;
+                    
+                    align-self: center;
+
+                    width: 100px;
+                    height: 100px;
+
+                  
+                    margin-left: 50px;
+                    
+                    .arrow__left, .arrow__right {
+                        width: 35px;
+
+                        border: solid 1px rgba(255, 255, 255, 0.4);
+            
+                        background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(15px);
+                        border-radius: 10px;
+                        padding: 10px;
+
+                        transition: all .5s ease;
+                        
+                        &:active {
+                            transform: scale(0.9);
+                        }
+                        img { 
+                            user-select: none;
+                        }
+                    }
+
+                    .arrow__left { margin-right: 10px }
                 }
             }            
         }
