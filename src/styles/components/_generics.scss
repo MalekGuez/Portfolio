@@ -115,3 +115,62 @@
         }
     }
 }
+
+
+// INPUT
+
+.input {
+    input {
+        width: 100%;
+        height: 35px;
+        outline: none;
+        color: white;
+        
+        border-radius: 25px;
+        
+        border: solid 2px rgba(255, 255, 255, 0.4);
+
+        background: rgba(255, 255, 255, 0.1);
+
+        backdrop-filter: blur(15px);
+
+        transition: all .5s ease;
+        
+        padding: 5px 0 5px 20px;
+
+        &:focus { border: solid 2px rgb(255, 255, 255) }
+
+        &::placeholder { color: rgba(255, 255, 255, 0.5) }
+    }
+}
+
+// TEXTAREA
+
+.textarea {
+
+    textarea {
+        width: 100%;
+        min-height: 50px;
+        max-height: 150px;
+        outline: none;
+        color: white;
+                
+        border-radius: 25px;
+        
+        border: solid 1px rgba(255, 255, 255, 0.4);
+
+        background: rgba(255, 255, 255, 0.1);
+
+        backdrop-filter: blur(15px);        
+
+        transition: all .5s ease;
+        
+        padding: 10px 0 5px 20px;
+
+        resize: vertical;
+
+        overflow-y: hidden;
+
+        &::placeholder { color: rgba(255, 255, 255, 0.5) }
+    }
+}

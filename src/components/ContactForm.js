@@ -37,7 +37,6 @@ const ContactForm = () => {
         }
         setCaptcha(genWord());
     }, []);
-
    
 
     // RESET VALUES -----------------------------------------------------
@@ -90,9 +89,15 @@ const ContactForm = () => {
 
                     <InputText value={subject} handleChange={handleSubjectChange} placeholder="Subject"/>
 
-                    <textarea placeholder="Message" onChange={(e) => handleMessageChange(e)} value={message} />
+                    <div className="textarea">
+                        <textarea classplaceholder="Message" onChange={(e) => handleMessageChange(e)} value={message} placeholder="Message" />
+                    </div>
 
-                    <InputText value={answer} handleChange={handleAnswerChange} placeholder={`Type : ${captcha}`}/>
+                    <div className="input__answer">
+                        <span>Type {captcha} : </span>
+                        <InputText value={answer} handleChange={handleAnswerChange} placeholder="Captcha" />
+                    </div>
+                   
 
                     <div className="input__btn">
                         <Button text={"Send message"} onClick={sendEmail} />

@@ -4,7 +4,9 @@ import Button from '../generics/Button';
 const Navbar = () => {
     return (
         <nav className="nav__container">
-            <div className="nav__logo">&lt;/&gt;</div>
+            <div className="nav__logo">
+                <a className="nav__item" href="#home">&lt;/&gt;</a>
+            </div>
             <div className="nav__items">
                 <a className="nav__item" href="#home">Home</a>
                 <a className="nav__item" href="#about">About</a>
