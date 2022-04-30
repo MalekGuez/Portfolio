@@ -14,24 +14,27 @@
         width: 80%;
         height: 100%;
 
-        .contact__split {
+        transition: all .5s ease;
+        .contact__container---form {
             width: 100%;
             height: 100%;
 
-            .contact__left {
+            .contact__content---form {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
                 
-                width: 50%;
+                width: 100%;
                 height: 100%; 
 
                 .contact__form {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height: 90%;
-                    padding: 0 10%;
+                    height: 70%;
+                    min-height: 300px;
+
+                    padding: 0 calc(5% + 20px) 0 5%;
 
                     border-radius: 25px;
         
@@ -41,12 +44,15 @@
             
                     backdrop-filter: blur(15px);
 
+                    transition: all 0.5s ease;
+
                     .contact__input {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
 
                         height: 80%;
+
                         .input__name-email {
                             display: flex;
                             .input { 
@@ -61,25 +67,239 @@
                         .input__answer {
                             display: flex;
                             align-items: center;
-                            span { width: 25% }
-                            .input { width: 40% }
+                            font-size: 16px;
+                            transition: all 0.5s ease;
+
+                            span { 
+                                width: 30%;
+                                pointer-events: none;
+                                user-select: none; 
+                                transition: all 0.5s ease;
+
+                            }
+                            
+                            .input { 
+                                transition: all 0.5s ease;
+
+                                width: 30%;
+                                input { font-size: 16px } 
+                            }
                         }
                     }
                 }
+
+                .contact__socials {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+
+                    width: 50%;
+                    height: 30%;
+
+                    .contact---title { 
+                        transition: all 0.5s ease;
+                        font-weight: bold;
+                        font-size: 26px 
+                    }
+
+                    .socials__content {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40%;
+
+                        border-radius: 15px;
                 
-            }
+                        border: solid 1px rgba(255, 255, 255, 0.4);
+                
+                        background: rgba(255, 255, 255, 0.1);
+                
+                        backdrop-filter: blur(15px);
 
-            .contact__right {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                        transition: all 0.5s ease;
 
-                width: 50%;
-                height: 100%;
+                        .contact__link {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 75px;
+                            height: 75px;
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                img { transform: scale(1.4) }
+                            }
+                            img {  
+                                width: 35px;
+                                transition: all 0.5s ease;
+                            }
+
+                            span {
+                                position: absolute;
+                                top: calc(100% + 10px);
+
+                                padding: 10px;
+
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all 0.5s ease;
+                                
+                                border-radius: 15px;
+                        
+                                border: solid 1px rgba(255, 255, 255, 0.4);
+                        
+                                background: rgba(255, 255, 255, 0.1);
+                        
+                                backdrop-filter: blur(15px);
+                            }
+                        }
+
+                        .discord {
+                            &:hover {
+                                span {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
+    }
 
-        
+    @media (max-width: 1300px) {
+        .contact__content {
+            .contact__container---form {
+                .contact__content---form {
+                    .contact__socials {
+                        .socials__content {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
+    @media (max-width: 1000px) {
+        .contact__content {
+            .contact__container---form {
+                .contact__content---form {
+                    
+                    .contact__form {
+
+                        .contact__input {
+                            .input__answer {
+                                span { width: 50% }
+                                .input { width: 50% }
+                            }
+                        }
+                    }
+
+                    .contact__socials {
+                        .contact---title { font-size: 20px }
+                        .socials__content {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        .contact__content {
+            width: 90%;
+            .contact__container---form {
+                .contact__content---form {
+
+                    .contact__socials {
+                        .contact---title { font-size: 20px }
+                        .socials__content {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        height: 80%;
+
+        .contact__content {
+            width: 90%;
+            height: 100%;
+
+            .title---circles { margin-bottom: 20px }
+            .contact__container---form {
+                .contact__content---form {
+                    flex-direction: column;
+                    .contact__form { 
+                        height: 100%;
+                        margin-bottom: 20px 
+                    }
+                    .contact__socials {
+                        width: 100%;
+                        height: 10%;
+                        .contact---title { font-size: 20px }
+                        .socials__content {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        .contact__content {
+            width: 90%;
+            height: 100%;
+            font-size: 14px;
+            .title---circles { margin-bottom: 50px }
+            .contact__container---form {
+                .contact__content---form {
+                    flex-direction: column;
+                    .contact__form { 
+                        height: 100%;
+                        
+                        .contact__input {
+                            .input { input { font-size: 14px } }
+                            
+                            .input__answer {
+                                span { 
+                                    font-size: 14px;
+                                    width: 50% 
+                                }
+                                .input { 
+                                    width: 50%;
+                                    input { font-size: 14px }
+                                }
+                            }
+                        }
+                    }
+                    .contact__socials {
+                        .contact---title { font-size: 20px }
+
+                        .socials__content {
+                            width: 80%;
+                            .contact__link {
+                                &:hover { transform: scale(1.05) }
+                                img { width: 30px;}
+                            }
+                            .discord {
+                                span {
+                                    top: calc(100% + 3px);
+                                    padding: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

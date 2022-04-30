@@ -2,8 +2,8 @@ import GitHub from './works/github.webp';
 import WWW from './works/www.webp';
 import Dribble from './works/dribble.webp';
 import Info from './works/info.webp';
-import ArrowLeft from './works/arrow-left.svg';
-import ArrowRight from './works/arrow-right.svg';
+import ArrowLeft from './works/arrow-left.webp';
+import ArrowRight from './works/arrow-right.webp';
 
 import WL from './works/development/WL.webp';
 import WB from './works/development/WB.webp';

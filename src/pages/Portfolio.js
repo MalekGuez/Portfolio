@@ -11,7 +11,9 @@ const Portfolio = () => {
 
     const bg = useRef(null);
 
-    const onScroll = (e) => bg.current.style.opacity = e.target.scrollTop / e.target.clientHeight;
+    const onScroll = (e) => {
+        if(bg.current.style.opacity < 1) bg.current.style.opacity = e.target.scrollTop / e.target.clientHeight;
+    }
 
     return (
         <>

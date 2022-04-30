@@ -30,12 +30,12 @@ const ContactForm = () => {
             let text = "";
             let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
           
-            for (var i = 0; i < 5; i++)
+            for (var i = 0; i < 7; i++)
               text += possible.charAt(Math.floor(Math.random() * possible.length));
           
-            return text;
+            setCaptcha(text);
         }
-        setCaptcha(genWord());
+        genWord();
     }, []);
    
 
@@ -46,15 +46,25 @@ const ContactForm = () => {
         setName("");
         setMessage("");
         setSubject("");
+        setAnswer("");
+        genWord();
     }
 
+    const genWord = () => {
+        let text = "";
+        let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      
+        for (var i = 0; i < 7; i++)
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+      
+        setCaptcha(text);
+    }
     // HANDLE -------------------------------------------------------------------------------------------
 
     const handleEmailChange = (e) => setEmail(e.target.value);
 
     const handleNameChange = (e) => {
         let val = e.target.value;
-        console.log(val)
         if (nameReg.test(val) || val === "") setName(val);
     }
     

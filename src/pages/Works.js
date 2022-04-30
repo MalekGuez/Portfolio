@@ -154,7 +154,6 @@ const Works = () => {
         setSliderList(drawings);
         setTimeout(() => {
             document.getElementById("slider").scrollLeft = 0;
-            console.log("ok");
         }, 1000)
     }
 
@@ -167,15 +166,15 @@ const Works = () => {
                     <div className="slider__buttons">
                         <div className="slider__button" onClick={handleClickDev} ref={dev}>
                             <FontAwesomeIcon icon={faLaptopCode} size="xl" className="button---icons"/>
-                            <span>Development</span>
+                            <span className="button__desc">Development</span>
                         </div>
                         <div className="slider__button" onClick={handleClickDesign} ref={design}>
                             <FontAwesomeIcon icon={faPaintBrush} size="xl" className="button---icons"/>
-                            <span>Design</span>
+                            <span className="button__desc">Design</span>
                         </div>
                         <div className="slider__button" onClick={handleClickDraw} ref={draw}>
                             <FontAwesomeIcon icon={faPen} size="xl" className="button---icons"/>
-                            <span>Drawing</span>
+                            <span className="button__desc">Drawing</span>
                         </div>
                     </div>
 

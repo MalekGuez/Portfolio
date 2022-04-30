@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CV from '../assets/content/about/GUEZOULI-Malek.pdf';
+
 const About = () => {
     return (
         <div className="about__container" id="about">
@@ -15,7 +17,7 @@ const About = () => {
                         Cares a lot about the user experience. Passionated for UI animations and creating intuitive, dynamic user experiences.
                     </div>
 
-                    <a className="button" href="./" target="_blank" rel="noopener noreferrer">
+                    <a className="button" href={CV} target="_blank" rel="noopener noreferrer">
                         Link to my CV
                     </a>
                 </div>
