@@ -7,7 +7,7 @@
 
 </div>
 
-Welcome to my Portfolio Website built with ReactJS and hosted on [Netlify](https://www.netlify.com/) !k
+Welcome to my Portfolio Website built with ReactJS and hosted on [Netlify](https://www.netlify.com/) !
 
 # Run locally
 
