@@ -113,10 +113,18 @@
         }
     }
 
+    @media (max-width: 400px) {
+        .skills__content {
+            font-size: 10px;
+            height: 80%;
+
+            .skills__texts { margin-top: 10px }
+        }
+    }
+
     @media (max-width: 350px) {
         .skills__content {
             font-size: 10px;
-            height: 450px;
 
             .title---circles {
                 font-size: 24px;

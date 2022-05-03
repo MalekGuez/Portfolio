@@ -62,7 +62,7 @@ const Works = () => {
             design: true,
             name: "3D Ball",
             image: p.Ball,
-            link: "https://dribbble.com/shots/18127227-Geometric-shape"
+            link: "https://dribbble.com/shots/18122967-3D-Ball"
         },
         {
             design: true,
