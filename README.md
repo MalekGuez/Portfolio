@@ -1,5 +1,6 @@
 <img src="./public/images/MyPortfolio.png" align="center"/>
 
+<img src="./public/images/Portfolio.png" align="center"/>
 
 <div align="center">
 
