@@ -26,7 +26,6 @@ const Works = () => {
             dev: true,
             name: "Weeb Lampe",
             image: p.WL,
-            dev: true,
             link: "https://github.com/Nahay/WeebLampe",
             url: "https://weeblampe.000webhostapp.com/index.php"    
         },
@@ -119,6 +118,43 @@ const Works = () => {
     ];
 
     useEffect(() => {
+        const devProjects = [
+            {
+                dev: true,
+                name: "Charlemagne",
+                image: p.Charlemagne,
+                link: "https://github.com/Nahay/Charlemagne",
+                url: "https://le-charlemagne.netlify.app/",
+                wiki: "https://github.com/Nahay/Charlemagne/wiki"
+            },
+            {
+                dev: true,
+                name: "Weeb Lampe",
+                image: p.WL,
+                link: "https://github.com/Nahay/WeebLampe",
+                url: "https://weeblampe.000webhostapp.com/index.php"    
+            },
+            {
+                dev: true,
+                name: "Weeb Battle",
+                image: p.WB,
+                url: "http://weeb-battle.000webhostapp.com/index.html"
+            },
+            {
+                dev: true,
+                name: "Charlemagne Réservation",
+                image: p.Charlemagne,
+                link: "https://github.com/Nahay/charlemagne-reservation-client",
+            },
+            {
+                dev: true,
+                name: "Rent Car",
+                image: p.RentCar,
+                link: "https://github.com/MalekGuez/RentCar",
+                wiki: "https://github.com/MalekGuez/RentCar/wiki"
+            },
+        ];
+
         setSliderList(devProjects);
         dev.current.classList.add("focused");
     }, []);
