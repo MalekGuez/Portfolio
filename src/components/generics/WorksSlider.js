@@ -29,17 +29,17 @@ const WorksSlider = ({list}) => {
                                     {p.dev &&
                                         <div className="infos__content">
                                             {p.link && 
-                                                <a href={p.link} target="_blank" className="info__item">
+                                                <a href={p.link} target="_blank" rel="noreferrer" className="info__item">
                                                     <img src={w.GitHub} alt={p.name} />
                                                 </a>
                                             }
                                             { p.url && 
-                                                <a href={p.url} target="_blank" className="info__item">
+                                                <a href={p.url} target="_blank" rel="noreferrer" className="info__item">
                                                     <img src={w.WWW} alt={p.name} />
                                                 </a>
                                             }
                                             {p.wiki && 
-                                                <a href={p.wiki} target="_blank" className="info__item">
+                                                <a href={p.wiki} target="_blank" rel="noreferrer" className="info__item">
                                                     <img src={w.Info} alt={p.name} />
                                                 </a>
                                             }
@@ -47,14 +47,14 @@ const WorksSlider = ({list}) => {
                                     }
                                     {p.design && 
                                         <div className="infos__content">
-                                            <a href={p.link} target="_blank" className="info__item">
+                                            <a href={p.link} target="_blank" rel="noreferrer" className="info__item">
                                                 <img src={w.Dribble} alt={p.name} />
                                             </a>
                                         </div>
                                     }
                                     {p.draw && 
                                         <div className="infos__content">
-                                            <a href={p.link} target="_blank" className="info__item">
+                                            <a href={p.link} target="_blank" rel="noreferrer" className="info__item">
                                                 <img src={w.Dribble} alt={p.name} />                                     
                                             </a>
                                         </div>
