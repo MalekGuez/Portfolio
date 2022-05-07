@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CV from '../assets/content/about/GUEZOULI-Malek.pdf';
+import CV from '../assets/content/about/CV_Malek.pdf';
 
 const About = () => {
     return (

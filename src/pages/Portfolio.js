@@ -12,7 +12,9 @@ const Portfolio = () => {
     const bg = useRef(null);
 
     const onScroll = (e) => {
-        if(bg.current.style.opacity < 1) bg.current.style.opacity = e.target.scrollTop / e.target.clientHeight;
+        if(e.target.scrollTop / e.target.clientHeight >= 1) bg.current.style.opacity = 1;
+        else bg.current.style.opacity = e.target.scrollTop / e.target.clientHeight;
+        
     }
 
     return (

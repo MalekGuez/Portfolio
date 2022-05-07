@@ -8,9 +8,9 @@ const WorksSlider = ({list}) => {
     const arrowLeft = useRef(null);
     const arrowRight = useRef(null);
 
-    const handleClickLeft = () => slider.current.scrollLeft -= 200;
+    const handleClickLeft = () => slider.current.scrollLeft -= 180;
 
-    const handleClickRight = () => slider.current.scrollLeft += 200;
+    const handleClickRight = () => slider.current.scrollLeft += 180;
 
     return (
         <div className="slider">
