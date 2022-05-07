@@ -20,10 +20,10 @@ const About = () => {
                                     <img src={c.Discord} alt="Discord" />
                                     <span>Malek#4178</span>
                                 </div>
-                                <a href="https://github.com/MalekGuez" target="_blank"  className="contact__link">
+                                <a href="https://github.com/MalekGuez" target="_blank" rel="noreferrer" className="contact__link">
                                     <img src={c.GitHub} alt="GitHub" />
                                 </a>
-                                <a href="https://linkedin.com/in/malekguezouli" target="_blank"  className="contact__link">
+                                <a href="https://linkedin.com/in/malekguezouli" target="_blank" rel="noreferrer" className="contact__link">
                                     <img src={c.Linkedin} alt="Linkedin" />
                                 </a>
                             </div>
