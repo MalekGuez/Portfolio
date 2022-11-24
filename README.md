@@ -9,25 +9,3 @@
 Welcome to my Portfolio Website built with ReactJS and hosted on [Netlify](https://www.netlify.com/) !
 
 <img src="./public/images/Portfolio.png" align="center"/>
-
-# Run locally
-
-> **📝** You must have Node.js and Git installed on your machine in order to run it locally.
-
-- Step 1: Clone the project
-
-```
-git clone https://github.com/MalekGuez/Portfolio.git
-```
-
-- Step 2: In the project directory, run the following command on your terminal to install all the dependencies.
-
-```
-npm install
-```
-
-- Step 3: Finally, run the following command to start the server on development mode.
-
-```
-npm start
-```
