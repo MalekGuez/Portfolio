@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/MalekGuez/assets/master/portfolio/logo.png" align="center"/>
   <h2><samp>My Portfolio</samp></h2>
   &nbsp;  
-  <i><a href=""https://malekguez.netlify.app/" /> > Discover more about me < </a></i>
+  <i><a href="https://malekguez.netlify.app/" /> > Discover more about me < </a></i>
 </div>
 
 </br>
